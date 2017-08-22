@@ -1,0 +1,43 @@
+{
+  "name": "name-case-lib-port",
+  "version": "0.0.1",
+  "description": "Port of NameCaseLib for PHP. Склонение ФИО русского и украинского языков",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir build",
+    "prepublish": "npm run build",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "russian",
+    "ukrainian",
+    "language",
+    "fio",
+    "fullname",
+    "name",
+    "surname",
+    "patronymic",
+    "ru",
+    "ua"
+  ],
+  "author": "Andriy Chaika <andriy@chaika.in.ua>",
+  "contributors": [
+    "Rabotyahoff <https://github.com/Rabotyahoff>",
+    "ukrbubik <ukrbubik@gmail.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^2.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukrbublik/name-case-lib-port.git"
+  },
+  "dependencies": {
+    "locutus": "^2.0.9"
+  }
+}
