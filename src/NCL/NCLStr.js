@@ -36,7 +36,10 @@ export default class NCLStr
      * @return int подстрока 
      */
     static substr (str, start, length = null) {
-        return mb_substr(str, start, length, NCLStr.charset);
+        let s = mb_substr(str, start, length, NCLStr.charset);
+        if (s === false)
+            s = '';
+        return s;
     }
      
 

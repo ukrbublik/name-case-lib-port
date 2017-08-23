@@ -1,6 +1,6 @@
 {
   "name": "name-case-lib-port",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Port of NameCaseLib for PHP. Склонение ФИО русского и украинского языков",
   "main": "build/index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",

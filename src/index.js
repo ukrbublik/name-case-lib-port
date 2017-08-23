@@ -8,4 +8,4 @@ NCL.setConcreteClasses({
     ua: NCLNameCaseUa,
 });
 
-export {NCLNameCaseUa, NCLNameCaseRu};
+export {NCLNameCaseUa, NCLNameCaseRu, NCL};

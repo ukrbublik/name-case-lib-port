@@ -722,7 +722,6 @@ export default class NCLNameCaseCore extends NCL
                 result_tmp=array_fill(0, this.CaseCount, cur_word);
                 last_rule=-1;
             }
-
             o_ncw.setNameCases(result_tmp);
             o_cur_words.push(o_ncw);
         }
