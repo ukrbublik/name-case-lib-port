@@ -28,7 +28,7 @@ for (let lang in testFios) {
         for (let forms of fios) {
             let basicForm = forms[0];
             describe(basicForm, () => {
-                for (let c = 1 ; c < Math.min(forms.length, 6) ; c++) {
+                for (let c = 1 ; c < forms.length ; c++) {
                     let expForm = forms[c];
                     if (!expForm)
                         continue;
@@ -107,7 +107,7 @@ for (let lang in testFiles) {
                     continue;
                 let basicForm = forms[0];
                 describe(basicForm, () => {
-                    for (let c = 1 ; c < Math.min(forms.length, 6) ; c++) {
+                    for (let c = 1 ; c < forms.length ; c++) {
                         let expForm = forms[c];
                         let cls = NCL.getConcreteClass(lang);
                         let ncl = new cls;
