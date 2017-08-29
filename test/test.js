@@ -182,7 +182,7 @@ for (let lang in testSplitFiles) {
                     let expForm = forms[f];
                     let cls = NCL.getConcreteClass(lang);
                     let ncl = new cls;
-                    let resForm = ncl.q(basicForm, f);=
+                    let resForm = ncl.q(basicForm, f);
                     it(CASES_NAMES[f] + ' -> ' + expForm, () => {
                         assert.strictEqual(resForm, expForm);
                     });
